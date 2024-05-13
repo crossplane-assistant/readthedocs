@@ -1,0 +1,51 @@
+---
+site_name: Crossplane Assistant
+site_description: Crossplane Assistant is your companion for Crossplane development.
+site_url: https://crossplane-assistant.readthedocs.io/
+
+repo_name: crossplane-assistant/crossplane-assistant
+repo_url: https://github.com/crossplane-assistant/crossplane-assistant
+
+theme:
+  name: material
+  language: en
+  # logo: assets/logo.png
+  # favicon: assets/favicon.png
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: en
+  - autorefs
+
+nav:
+  - Homepage: index.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - codehilite
+  - tables
+  - footnotes
+  - extra
+  - toc:
+      permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/crossplane-assistant/crossplane-assistant
+
+copyright: Copyright &copy; 2024 Crossplane Assistant, and contributors
