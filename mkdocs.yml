@@ -9,8 +9,8 @@ repo_url: https://github.com/crossplane-assistant/crossplane-assistant
 theme:
   name: material
   language: en
-  # logo: assets/logo.png
-  # favicon: assets/favicon.png
+  logo: assets/logo-black.png
+  favicon: assets/logo-black.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -25,9 +25,50 @@ plugins:
   - search:
       lang: en
   - autorefs
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 
 nav:
   - Homepage: index.md
+  - Overview:
+    - Overview: overview/overview.md
+    - Features: overview/features.md
+    - Compatibility: overview/compatibility.md
+    - Screenshots:
+      - Summary: screenshots/index.md
+      - User Interface:
+        - XRDs: screenshots/xrds/index.md
+        - Compositions: screenshots/compositions/index.md
+        - Claims: screenshots/claims/graph/index.md
+  - Architecture:
+    - Principle : architecture/principle/index.md
+    - Setup: architecture/installation/index.md
+    - Usage: architecture/usage/index.md
+  - Contributing:
+    - Support: contributing/support.md
+    - How to contribute:
+        - Issues: contributing/issues.md
+        - Discussions: contributing/discussions.md
+        - Pull Requests: contributing/pull-requests.md
+        - Development: contributing/development.md
+        - Code of Conduct: contributing/code-of-conduct.md
+    - Maintainer:
+        - Release Flow: contributing/maintainer/release-flow.md
+  - License: license.md
 
 markdown_extensions:
   - attr_list
@@ -41,6 +82,8 @@ markdown_extensions:
       permalink: true
   - markdown.extensions.codehilite:
       guess_lang: false
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra:
   generator: false
@@ -49,3 +92,4 @@ extra:
       link: https://github.com/crossplane-assistant/crossplane-assistant
 
 copyright: Copyright &copy; 2024 Crossplane Assistant, and contributors
+
