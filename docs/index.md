@@ -1,9 +1,8 @@
 ---
 hide:
   - toc
-  - navigation
 ---
-# Crossplane Assistant
+# Homepage
 
 ![Crossplane Assistant](./assets/logo.png){: style="width: 100%; max-width: 60%; margin: 0 20%;"}
 

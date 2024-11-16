@@ -8,4 +8,4 @@ What are you looking for?
 
 * [Navigating in the XRDs](./xrds/index.md)
 * [Navigating in the Compositions](./compositions/index.md)
-* [Navigating in the Claims](./claims/index.md)
+* [Navigating in the Claims](./claims/graph/index.md)

@@ -43,11 +43,9 @@ plugins:
       manual: false
 
 nav:
-  - Homepage: index.md
-  - Overview:
-    - Overview: overview/overview.md
+  - Crossplane Assistant:
+    - index.md
     - Features: overview/features.md
-    - Compatibility: overview/compatibility.md
     - Screenshots:
       - Summary: screenshots/index.md
       - User Interface:
@@ -56,8 +54,11 @@ nav:
         - Claims: screenshots/claims/graph/index.md
   - Architecture:
     - Principle : architecture/principle/index.md
-    - Setup: architecture/installation/index.md
     - Usage: architecture/usage/index.md
+    - Compatibility: architecture/compatibility.md
+  - Deployment:
+    - Docker: deployment/docker/index.md
+    - Helm Chart: deployment/helm/index.md
   - Contributing:
     - Support: contributing/support.md
     - How to contribute:
@@ -67,7 +68,9 @@ nav:
         - Development: contributing/development.md
         - Code of Conduct: contributing/code-of-conduct.md
     - Maintainer:
+        - Git workflow: contributing/maintainer/git-workflow.md
         - Release Flow: contributing/maintainer/release-flow.md
+    - The Team: contributing/team.md
   - License: license.md
 
 markdown_extensions:
@@ -84,6 +87,11 @@ markdown_extensions:
       guess_lang: false
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra:
   generator: false

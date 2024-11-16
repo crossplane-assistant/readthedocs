@@ -13,7 +13,7 @@ Thank you for taking interest in contributing to Crossplane Assistant!
 
 The pull request title must follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format.
 
-Format of the title
+Format of the title:
 
 ```raw
 <type>(<scope>): <subject>

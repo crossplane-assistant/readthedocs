@@ -1,5 +1,7 @@
 # Features
 
+Crossplane Assistant provides you some interesting features to help you manage your Crossplane resources.
+
 - [x] Check the XRD healthiness in the cluster
 - [x] Show the Composition in a graphical way
 - [x] Watch the Composite resource creation (a changer) and evolution in the cluster
