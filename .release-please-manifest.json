@@ -1,3 +1,4 @@
 {
-    "release-type": "python"
+    "release-type": "python",
+    ".": "0.1.0"
 }
