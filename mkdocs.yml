@@ -9,8 +9,8 @@ repo_url: https://github.com/crossplane-assistant/crossplane-assistant
 theme:
   name: material
   language: en
-  # logo: assets/logo.png
-  # favicon: assets/favicon.png
+  logo: assets/logo-black.png
+  favicon: assets/logo-black.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -25,9 +25,53 @@ plugins:
   - search:
       lang: en
   - autorefs
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
 
 nav:
-  - Homepage: index.md
+  - Crossplane Assistant:
+    - index.md
+    - Features: overview/features.md
+    - Screenshots:
+      - Summary: screenshots/index.md
+      - User Interface:
+        - XRDs: screenshots/xrds/index.md
+        - Compositions: screenshots/compositions/index.md
+        - Claims: screenshots/claims/graph/index.md
+  - Architecture:
+    - Principle : architecture/principle/index.md
+    - Usage: architecture/usage/index.md
+    - Compatibility: architecture/compatibility.md
+  - Deployment:
+    - Docker: deployment/docker/index.md
+    - Helm Chart: deployment/helm/index.md
+  - Contributing:
+    - Support: contributing/support.md
+    - How to contribute:
+        - Issues: contributing/issues.md
+        - Discussions: contributing/discussions.md
+        - Pull Requests: contributing/pull-requests.md
+        - Development: contributing/development.md
+        - Code of Conduct: contributing/code-of-conduct.md
+    - Maintainer:
+        - Git workflow: contributing/maintainer/git-workflow.md
+        - Release Flow: contributing/maintainer/release-flow.md
+    - The Team: contributing/team.md
+  - License: license.md
 
 markdown_extensions:
   - attr_list
@@ -41,6 +85,13 @@ markdown_extensions:
       permalink: true
   - markdown.extensions.codehilite:
       guess_lang: false
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra:
   generator: false
@@ -49,3 +100,4 @@ extra:
       link: https://github.com/crossplane-assistant/crossplane-assistant
 
 copyright: Copyright &copy; 2024 Crossplane Assistant, and contributors
+
